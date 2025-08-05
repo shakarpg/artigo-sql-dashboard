@@ -5,21 +5,6 @@ Este repositório faz parte da 33ª Competição de Artigos da DIO – Randstad 
 ## 📄 Artigo na DIO
 [Leia o artigo completo na DIO]()
 
-## 📂 Estrutura
-/prompts
-   prompt1.txt
-   prompt2.txt
-   prompt3.txt
-/sql
-   vendas.sql
-/dax
-   medidas.txt
-/imagens
-   capa.png
-   conexao-pbi-sql.png
-   dashboard-pbi.png
-README.md
-
 ## 🔧 Tecnologias Utilizadas
 - SQL Server
 - Power BI Desktop
