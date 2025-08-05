@@ -1,0 +1,18 @@
+-- Medida para receita total
+Receita Total = SUM(Vendas[Valor])
+
+-- Medida para quantidade total
+Quantidade Total = SUM(Vendas[Quantidade])
+
+-- Medida para ticket médio
+Ticket Médio = DIVIDE([Receita Total], [Quantidade Total], 0)
+
+-- Medida para crescimento de vendas mensal
+Crescimento Mensal (%) =
+VAR ReceitaMesAtual = [Receita Total]
+VAR ReceitaMesAnterior = CALCULATE([Receita Total], DATEADD(Vendas[Data], -1, MONTH))
+RETURN
+IF(ReceitaMesAnterior > 0,
+    (ReceitaMesAtual - ReceitaMesAnterior) / ReceitaMesAnterior,
+    BLANK()
+)
